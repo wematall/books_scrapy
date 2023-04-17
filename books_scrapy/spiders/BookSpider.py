@@ -3,7 +3,7 @@ import time
 
 class BookSpider(scrapy.Spider):
     name = "BookSpyder"
-    start_urls = ["http://knigi.tomsk.ru/products/new"]
+    start_urls = [""]  # link removed ;)
     
     def parse(self, response):
         links = response.css("div.name a::attr(href)")
